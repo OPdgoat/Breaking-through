@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/CSS" href="Main CSS.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <script src="Main JS.js"></script>
+    <title>Breaking Through</title>
+    <style>
+    * {
+  box-sizing: border-box;
+}
+
+.image {
+    width: 150px;
+    height: 150px;
+  }
+
+body {
+  background-color: #474e5d;
+  font-family: Helvetica, sans-serif;
+}
+
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  left: 50%;
+}
+
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+.right::after {
+  left: -16px;
+}
+
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+@media screen and (max-width: 600px) {
+  .timeline::after {
+    left: 31px;
+  }
+
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  .left::after, .right::after {
+    left: 15px;
+  }
+
+  .right {
+    left: 0%;
+  }
+}
+    </style>
+  </head>
+  <body>
+    <button class="homebutton" onclick="location.href='index.html';">Home</button>
+    <button class="mainbutton" onclick="toggleNav()" style="float: right;"><span class="material-icons">menu_open</span></button>
+    <div class="navbar">
+      <a href="Vacuum Tubes.html" class="navbar__link"><span class="material-icons">control_point</control-point></span> Vacuum Tubes</a>
+      <a href="Early Transistors.html" class="navbar__link"><span class="material-icons">group_work</control-point></span> Early Transistors</a>
+      <a href="Mass Production.html" class="navbar__link"><span class="material-icons">build</control-point></span> Mass Production</a>
+      <a href="Timeline.html" class="navbar__link"><span class="material-icons">collections</control-point></span> Timeline</a>
+    </div>
+    <h1 class="normaltext">Transistor's Progress</h1>
+    <div class="timeline">
+      <div class="container left">
+        <div class="content">
+          <h2>1904</h2>
+          <p>Vacuum Tube</p>
+          <img src="Images/Timeline1.png" alt="Picture of Diode Vacuum Tube" class="image">
+          <p class="citation">A typical vacuum tube rectifier, https://steemit.com/technology/@proteus-h/how-a-vacuum-tube-rectifier-works</p>
+        </div>
+      </div>
+      <div class="container right">
+        <div class="content">
+          <h2>1906</h2>
+          <p>Triode</p>
+          <img src="Images/Timeline2.png" alt="Picture of Triode Vacuum Tube" class="image">
+          <p class="citation">https://picclick.com/Good-UV202-Brass-Base-Tipped-Triode-Vacuum-Tube-163985191899.html</p>
+        </div>
+      </div>
+      <div class="container left">
+        <div class="content">
+          <h2>1926</h2>
+          <p>Transistor Idea</p>
+          <img src="Images/Timeline3.png" alt="Picture of Idea of Transistor" class="image">
+          <p class="citation">Lilienfeld’s field-effect transistor, https://www.theregister.co.uk/Print/2012/12/14/feature_the_transistor_is_65_years_old/</p>
+        </div>
+      </div>
+      <div class="container right">
+        <div class="content">
+          <h2>1934</h2>
+          <p>P-N Junction</p>
+          <img src="Images/Timeline4.png" alt="Picture of P-N Junction" class="image">
+          <p class="citation">http://www.circuitstoday.com/pn-junction-diode-characteristics</p>
+        </div>
+      </div>      
+      <div class="container left">
+        <div class="content">
+          <h2>1947</h2>
+          <p>First Produced Transistor</p>
+          <img src="Images/Timeline5.png" alt="Picture of the first produced transistor" class="image">
+          <p class="citation">The First Transistor, https://www.computerhistory.org/revolution/digital-logic/12/273</p>
+        </div>
+      </div>
+      <div class="container right">
+        <div class="content">
+          <h2>1954</h2>
+          <p>Silicon Transistors</p>
+          <img src="Images/Timeline6.png" alt="Picture of silicon transistors" class="image">
+          <p class="citation">TI 904 Si transistor, http://spingalhistory.blogspot.com/2017/02/the-first-silicon-transistors.html</p>
+        </div>
+      </div>      
+      <div class="container left">
+        <div class="content">
+          <h2>1958</h2>
+          <p>Hybrid IC</p>
+          <img src="Images/Timeline7.png" alt="Picture of Hybrid IC" class="image">
+          <p class="citation">https://picclick.com/Fisher-PA-501-Hybrid-IC-Power-Amp-Module-182893217004.html</p>
+        </div>
+      </div>
+      <div class="container right">
+        <div class="content">
+          <h2>1959</h2>
+          <p>Unitary IC</p>
+          <img src="Images/Timeline8.png" alt="Picture of Unitary IC" class="image">
+          <p class="citation">https://patents.patsnap.com/v/US10050320-integrated-circuit-with-shared-electrode-energy-storage-devices.html</p>
+        </div>
+      </div>      
+      <div class="container left">
+        <div class="content">
+          <h2>1959</h2>
+          <p>MOSFET</p>
+          <img src="Images/Timeline9.png" alt="Picture of MOSFET" class="image">
+          <p class="citation">https://www.amazon.com/IRF510PBF-IRF510-Power-N-Channel-transistor/dp/B00I6IAGCA</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

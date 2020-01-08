@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/CSS" href="Main CSS.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <script src="Main JS.js"></script>
+    <title>Breaking Through</title>
+    <style>
+      .image0 {
+        background-image: url("Images/EarlyTransistor0.png");
+        min-height: 100%
+      }
+      .image1 {
+        background-image: url("Images/EarlyTransistor1.jpg");
+        min-height: 100%;  
+      }
+      </style>
+  </head>
+  <body>
+    <button class="homebutton" onclick="location.href='index.html';">Home</button>
+    <button class="mainbutton" onclick="toggleNav()" style="float: right;"><span class="material-icons">menu_open</span></button>
+    <div class="navbar">
+      <a href="Vacuum Tubes.html" class="navbar__link"><span class="material-icons">control_point</control-point></span> Vacuum Tubes</a>
+      <a href="Early Transistors.html" class="navbar__link"><span class="material-icons">group_work</control-point></span> Early Transistors</a>
+      <a href="Mass Production.html" class="navbar__link"><span class="material-icons">build</control-point></span> Mass Production</a>
+      <a href="Timeline.html" class="navbar__link"><span class="material-icons">collections</control-point></span> Timeline</a>
+    </div>
+    <div class="parallax image0">
+      <div class="caption">
+        <span class="border">The First Transistors</span>
+      </div>
+    </div>
+    <div class="text1">
+      <p class="citation">https://www.lens.org/lens/patent/147-350-838-059-788</p>
+      <h3 style="text-align: center;">Field effect and Point contact</h3>
+      <p>
+        The first two people who worked towards solid state information transfer were Julius Lilienfeld and Oskar Heil. Lilienfeld produced two patents relating to transistors, the more famous one talks about a three-electrode structure on a copper semiconductor. This device is close to a modern field effect transistor, however there is no documentation of it ever being produced or used. Oskar Heil studied silicon crystals in an attempt to increase purity, but a cracked crystal had an odd behavior where the current flowing through changed over water and over a hot soldering iron. This was due to each side of the crystal containing different purities and was used as the first P-N Junction.
+      </p>
+    </div>
+    <div class="parallax image1"></div>
+    <div class="text2">
+      <p class="citation">The first transistor, invented by American physicists John Bardeen, Walter H. Brattain, and William B. Shockley, https://www.britannica.com/technology/transistor/Innovation-at-Bell-Labs</p>
+      <p>
+        The majority of early pioneering efforts in transistors happened at the famous Bell Labs. In the span of a single month John Bardeen and Walter Brattain managed to work together and produce the first point-contact transistor. The original prototype was made from silicon, but it was discovered that germanium greatly increased amplification. Over the next few years Bell Lab’s scientists and engineers continued to investigate and innovate.
+      </p>
+      <video width="640" height="360" controls>
+        <source src="Videos/The Invention That Changed The World.mp4" type="video/mp4">
+       </video>
+       <p class="citation">Clip from 1:00-2:57</p>
+    </div>
+  </body>
+</html>
